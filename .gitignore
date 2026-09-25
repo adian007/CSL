@@ -1,0 +1,28 @@
+# Virtual environment (isolated: QuTiP 5.3.1 requires numpy<2.3)
+.venv/
+venv/
+env/
+
+# Python bytecode and build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Install logs
+pip_*.log
+pip_*.err
+
+# NOTE: arxiv_src/ is intentionally NOT ignored. The pipeline's provenance
+# model requires that the original LaTeX sources behind every re-derived
+# bound are version-controlled alongside the code that re-derives them.

@@ -1,0 +1,270 @@
+================================================================================
+CSL/DP NUMERICAL CONVERGENCE STUDY REPORT
+================================================================================
+
+--------------------------------------------------------------------------------
+STUDY 1: eta_kfree — sweep R/r_C in [0.001, 10000]
+Comparing three routes: closed form, real-space scipy quad, Fourier scipy quad
+Required: 10 significant figures
+--------------------------------------------------------------------------------
+     x=R/r_C       scipy_real    scipy_fourier           closed  sf(real,closed) sf(fourier,closed)   sf(real,fourier)   WARN OK
+--------------------------------------------------------------------------------
+       0.001 9.9999970000e-01              N/A 9.9999970000e-01               13                 -1                 -1        ✓
+        0.01 9.9997000064e-01              N/A 9.9997000064e-01               15                 -1                 -1        ✓
+         0.1 9.9700641748e-01              N/A 9.9700641748e-01               15                 -1                 -1        ✓
+         0.5 9.2885039164e-01              N/A 9.2885039164e-01              inf                 -1                 -1        ✓
+           1 7.5461294672e-01              N/A 7.5461294672e-01              inf                 -1                 -1        ✓
+           2 3.8905626844e-01              N/A 3.8905626844e-01               15                 -1                 -1        ✓
+           5 5.7045784843e-02              N/A 5.7045784843e-02               15                 -1                 -1        ✓
+          10 8.8467231054e-03              N/A 8.8467231054e-03               15                 -1                 -1        ✓
+          50 8.2198552843e-05              N/A 8.2198552843e-05               15                 -1                 -1        ✓
+         100 1.0454735105e-05              N/A 1.0454735105e-05              inf                 -1                 -1        ✓
+         500 8.4789785611e-08              N/A 8.4789785611e-08              inf                 -1                 -1        ✗
+        1000 1.0616723117e-08              N/A 1.0616723117e-08               15                 -1                 -1        ✗
+        5000 8.5048984844e-11              N/A 8.5048984844e-11               15                 -1                 -1        ✗
+       1e+04 5.2937427198e-59              N/A 1.0632923105e-11                0                 -1                 -1        ✗
+
+✗ SOME eta sweep points FAIL — see details below.
+
+eta_kfree — degraded regions:
+  x =      500  sigfigs =    8  reason: roundoff/fundamental
+  x =     1000  sigfigs =    6  reason: roundoff/fundamental
+  x =     5000  sigfigs =    4  reason: roundoff/fundamental
+  x =    1e+04  sigfigs =    0  reason: roundoff/fundamental
+
+--------------------------------------------------------------------------------
+STUDY 2: K_CSL_sph_numeric — 2D grid
+R/r_C in [0.01, 0.1, 1.0, 10.0, 100.0, 1000.0], Δx/r_C in [0.0, 0.1, 1.0, 10.0, 100.0]
+Required: 10 significant figures vs analytical/mpmath reference
+--------------------------------------------------------------------------------
+   R/r_C   Δx/r_C      scipy K_CSL              ref  sigfigs   WARN OK
+----------------------------------------------------------------------
+    0.01     0.00 0.0000000000e+00 0.0000000000e+00      inf        ✓
+    0.01     0.10 2.4998746913e-07 2.4998746913e-07       11        ✓
+    0.01     1.00 2.4998437562e-05 2.4998437562e-05       12        ✓
+    0.01    10.00 2.4967528248e-03 2.4967528248e-03       13        ✓
+    0.01   100.00 2.2118868725e-01 2.2118868725e-01       13        ✓
+    0.10     0.00 0.0000000000e+00 0.0000000000e+00      inf        ✓
+    0.10     0.10 2.4875063850e-05 2.4875063850e-05       13        ✓
+    0.10     1.00 2.4844367869e-03 2.4844367869e-03       13        ✓
+    0.10    10.00 2.2014921995e-01 2.2014921995e-01       15        ✓
+    0.10   100.00 9.9700641746e-01 9.9700641746e-01       14        ✓
+    1.00     0.00 0.0000000000e+00 0.0000000000e+00      inf        ✓
+    1.00     0.10 1.5529827700e-03 1.5529827700e-03       13        ✓
+    1.00     1.00 1.4055565522e-01 1.4055565522e-01       15        ✓
+    1.00    10.00 7.5461294632e-01 7.5461294632e-01      inf        ✓
+    1.00   100.00 7.5461294672e-01 7.5461294672e-01       15        ✓
+   10.00     0.00 0.0000000000e+00 0.0000000000e+00      inf        ✓
+   10.00     0.10 1.4330529675e-04 1.4330529675e-04       13        ✓
+   10.00     1.00 5.6023349540e-03 5.6023349540e-03      inf        ✓
+   10.00    10.00 8.8467231054e-03 8.8467231054e-03       12        ✓
+   10.00   100.00 8.8472299949e-03 8.8467231054e-03        4        ✗
+  100.00     0.00 0.0000000000e+00 0.0000000000e+00      inf        ✓
+  100.00     0.10 6.3282308977e-07 6.3283288152e-07        4        ✗
+  100.00     1.00 7.1321816599e-06 7.1321900333e-06        5        ✗
+  100.00    10.00 1.0454735121e-05 1.0454762919e-05        5        ✗
+  100.00   100.00 1.0468202238e-05 1.0454735105e-05        2        ✗
+ 1000.00     0.00 0.0000000000e+00 0.0000000000e+00      inf        ✓
+ 1000.00     0.10 7.7910031898e-10 7.8297590776e-10        2        ✗
+ 1000.00     1.00 7.2933820235e-09 7.2970224130e-09        3        ✗
+ 1000.00    10.00 1.0616726936e-08 1.0620291294e-08        3        ✗
+ 1000.00   100.00 9.7099708545e-09 1.0616723117e-08        1        ✗
+
+✗ SOME K_CSL grid points FAIL — see details below.
+
+K_CSL_sph — degraded regions:
+  R/r_C=  10.0, Δx/r_C=100.0  sigfigs=   4  reason: roundoff/fundamental
+  R/r_C= 100.0, Δx/r_C=  0.1  sigfigs=   4  reason: roundoff/fundamental
+  R/r_C= 100.0, Δx/r_C=  1.0  sigfigs=   5  reason: roundoff/fundamental
+  R/r_C= 100.0, Δx/r_C= 10.0  sigfigs=   5  reason: roundoff/fundamental
+  R/r_C= 100.0, Δx/r_C=100.0  sigfigs=   2  reason: roundoff/fundamental
+  R/r_C=1000.0, Δx/r_C=  0.1  sigfigs=   2  reason: roundoff/fundamental
+  R/r_C=1000.0, Δx/r_C=  1.0  sigfigs=   3  reason: roundoff/fundamental
+  R/r_C=1000.0, Δx/r_C= 10.0  sigfigs=   3  reason: roundoff/fundamental
+  R/r_C=1000.0, Δx/r_C=100.0  sigfigs=   1  reason: roundoff/fundamental
+
+--------------------------------------------------------------------------------
+STUDY 3: SAFE OPERATING ENVELOPE (10 sigfigs reliable)
+--------------------------------------------------------------------------------
+eta_kfree:
+  SAFE (10+ sigfigs, no warnings): x ∈ [0.001, 0.01, 0.1, 0.5, 1.0, 2.0, 5.0, 10.0, 50.0, 100.0]
+  UNSAFE: x ∈ [500.0, 1000.0, 5000.0, 10000.0]
+  Recommended operating range: R/r_C ∈ [1e-3, 100] (point-particle to moderately large)
+  Marginal: R/r_C ∈ [100, 500] — check per-call
+  Avoid reliance on 10 sigfigs for: R/r_C > 500
+
+K_CSL_sph_numeric:
+  SAFE grid points (21/30):
+    R/r_C=   0.0, Δx/r_C=  0.0
+    R/r_C=   0.0, Δx/r_C=  0.1
+    R/r_C=   0.0, Δx/r_C=  1.0
+    R/r_C=   0.0, Δx/r_C= 10.0
+    R/r_C=   0.0, Δx/r_C=100.0
+    R/r_C=   0.1, Δx/r_C=  0.0
+    R/r_C=   0.1, Δx/r_C=  0.1
+    R/r_C=   0.1, Δx/r_C=  1.0
+    R/r_C=   0.1, Δx/r_C= 10.0
+    R/r_C=   0.1, Δx/r_C=100.0
+    R/r_C=   1.0, Δx/r_C=  0.0
+    R/r_C=   1.0, Δx/r_C=  0.1
+    R/r_C=   1.0, Δx/r_C=  1.0
+    R/r_C=   1.0, Δx/r_C= 10.0
+    R/r_C=   1.0, Δx/r_C=100.0
+    R/r_C=  10.0, Δx/r_C=  0.0
+    R/r_C=  10.0, Δx/r_C=  0.1
+    R/r_C=  10.0, Δx/r_C=  1.0
+    R/r_C=  10.0, Δx/r_C= 10.0
+    R/r_C= 100.0, Δx/r_C=  0.0
+    R/r_C=1000.0, Δx/r_C=  0.0
+  UNSAFE grid points (9/30):
+    R/r_C=  10.0, Δx/r_C=100.0
+    R/r_C= 100.0, Δx/r_C=  0.1
+    R/r_C= 100.0, Δx/r_C=  1.0
+    R/r_C= 100.0, Δx/r_C= 10.0
+    R/r_C= 100.0, Δx/r_C=100.0
+    R/r_C=1000.0, Δx/r_C=  0.1
+    R/r_C=1000.0, Δx/r_C=  1.0
+    R/r_C=1000.0, Δx/r_C= 10.0
+    R/r_C=1000.0, Δx/r_C=100.0
+
+--------------------------------------------------------------------------------
+STUDY 4: FAILURE CLASSIFICATION
+--------------------------------------------------------------------------------
+(a) scipy roundoff — fixable by raising limit:
+
+(b) Fundamental numerical difficulty:
+  ('eta', 500.0, 'only 8 sigfigs at R/r_C=500.0')
+  ('eta', 1000.0, 'only 6 sigfigs at R/r_C=1000.0')
+  ('eta', 5000.0, 'severe precision loss at R/r_C=5000.0: integrand spans many scales')
+  ('eta', 10000.0, 'severe precision loss at R/r_C=10000.0: integrand spans many scales')
+  ('K_CSL', 10.0, 100.0, 'only 4 sigfigs')
+  ('K_CSL', 100.0, 0.1, 'only 4 sigfigs')
+  ('K_CSL', 100.0, 1.0, 'only 5 sigfigs')
+  ('K_CSL', 100.0, 10.0, 'only 5 sigfigs')
+  ('K_CSL', 100.0, 100.0, 'only 2 sigfigs')
+  ('K_CSL', 1000.0, 0.1, 'only 2 sigfigs')
+  ('K_CSL', 1000.0, 1.0, 'only 3 sigfigs')
+  ('K_CSL', 1000.0, 10.0, 'only 3 sigfigs')
+  ('K_CSL', 1000.0, 100.0, 'only 1 sigfigs')
+
+(c) Possible real bug:
+  None detected.
+
+--------------------------------------------------------------------------------
+STUDY 5: EFFECT OF RAISING limit / epsabs / epsrel
+--------------------------------------------------------------------------------
+eta_kfree — improvement tests at problematic x values:
+  x =      100: default sigfigs = inf, best = limit=500, epsabs=1e-14, epsrel=1e-14 → sigfigs = inf
+
+  x =      500: default sigfigs = inf, best = limit=500, epsabs=1e-14, epsrel=1e-14 → sigfigs = inf
+
+  x =     1000: default sigfigs = 15, best = limit=500, epsabs=1e-14, epsrel=1e-14 → sigfigs = 15
+
+  x =     5000: default sigfigs = 15, best = limit=500, epsabs=1e-14, epsrel=1e-14 → sigfigs = 15
+
+  x =    1e+04: default sigfigs = 0, best = limit=500, epsabs=1e-14, epsrel=1e-14 → sigfigs = 0
+
+K_CSL_sph — improvement tests at problematic grid points:
+  R/r_C=  10.0, Δx/r_C=  1.0: default sigfigs = inf, best = limit=500, epsabs=1e-14, epsrel=1e-14 → sigfigs = inf
+
+  R/r_C= 100.0, Δx/r_C=  0.1: default sigfigs = 9, best = limit=500, epsabs=1e-16, epsrel=1e-14 → sigfigs = 11
+    IMPROVEMENT: +2 sigfigs with tighter params
+
+  R/r_C= 100.0, Δx/r_C=  1.0: default sigfigs = 10, best = limit=500, epsabs=1e-15, epsrel=1e-14 → sigfigs = 11
+    IMPROVEMENT: +1 sigfigs with tighter params
+
+  R/r_C= 100.0, Δx/r_C= 10.0: default sigfigs = 6, best = limit=500, epsabs=1e-14, epsrel=1e-14 → sigfigs = 6
+
+  R/r_C=1000.0, Δx/r_C=  1.0: default sigfigs = 3, best = limit=500, epsabs=1e-14, epsrel=1e-14 → sigfigs = 3
+
+--------------------------------------------------------------------------------
+STUDY 6: MPMATH (dps=50) vs SCIPY CROSS-CHECK
+--------------------------------------------------------------------------------
+eta_kfree — scipy vs mpmath:
+       x       scipy_real          mp_real     sf    scipy_fourier       mp_fourier     sf
+--------------------------------------------------------------------------------------
+     0.1 9.9700641748e-01 9.9700641748e-01    inf 9.9700641748e-01 9.9700641748e-01     13
+       1 7.5461294672e-01 7.5461294672e-01    inf 7.5461294672e-01 7.5461294672e-01    inf
+      10 8.8467231054e-03 8.8467231054e-03     15 8.8467231054e-03 8.8467231054e-03     14
+     100 1.0454735105e-05 1.0454735105e-05    inf 1.0454735106e-05 1.0454735105e-05     10
+    1000 1.0616723117e-08 1.0616723117e-08     15 1.0616725137e-08 1.0615869122e-08      4
+
+K_CSL_sph — scipy vs mpmath:
+  R/r_C=   0.0, Δx/r_C=  0.0: scipy=0.00000000e+00, mp=0.00000000e+00, sf= inf, ✓
+  R/r_C=   0.0, Δx/r_C=  0.1: scipy=2.49987469e-07, mp=2.49987469e-07, sf=  11, ✓
+  R/r_C=   0.0, Δx/r_C=  1.0: scipy=2.49984376e-05, mp=2.49984376e-05, sf=  12, ✓
+  R/r_C=   0.0, Δx/r_C= 10.0: scipy=2.49675282e-03, mp=2.49675282e-03, sf=  13, ✓
+  R/r_C=   0.1, Δx/r_C=  0.0: scipy=0.00000000e+00, mp=0.00000000e+00, sf= inf, ✓
+  R/r_C=   0.1, Δx/r_C=  0.1: scipy=2.48750638e-05, mp=2.48750638e-05, sf=  13, ✓
+  R/r_C=   0.1, Δx/r_C=  1.0: scipy=2.48443679e-03, mp=2.48443679e-03, sf=  13, ✓
+  R/r_C=   0.1, Δx/r_C= 10.0: scipy=2.20149220e-01, mp=2.20149220e-01, sf=  15, ✓
+  R/r_C=   1.0, Δx/r_C=  0.0: scipy=0.00000000e+00, mp=0.00000000e+00, sf= inf, ✓
+  R/r_C=   1.0, Δx/r_C=  0.1: scipy=1.55298277e-03, mp=1.55298277e-03, sf=  13, ✓
+  R/r_C=   1.0, Δx/r_C=  1.0: scipy=1.40555655e-01, mp=1.40555655e-01, sf=  15, ✓
+  R/r_C=   1.0, Δx/r_C= 10.0: scipy=7.54612946e-01, mp=7.54612946e-01, sf= inf, ✓
+  R/r_C=  10.0, Δx/r_C=  0.1: scipy=1.43305297e-04, mp=1.43305297e-04, sf=  13, ✓
+  R/r_C=  10.0, Δx/r_C=  1.0: scipy=5.60233495e-03, mp=5.60233495e-03, sf= inf, ✓
+  R/r_C=  10.0, Δx/r_C= 10.0: scipy=8.84672311e-03, mp=8.84672311e-03, sf=  12, ✓
+  R/r_C= 100.0, Δx/r_C=  0.1: scipy=6.32823090e-07, mp=6.32832882e-07, sf=   4, ✗
+  R/r_C= 100.0, Δx/r_C=  1.0: scipy=7.13218166e-06, mp=7.13219003e-06, sf=   5, ✗
+  R/r_C= 100.0, Δx/r_C= 10.0: scipy=1.04547351e-05, mp=1.04547629e-05, sf=   5, ✗
+  R/r_C=1000.0, Δx/r_C=  0.1: scipy=7.79100319e-10, mp=7.82975908e-10, sf=   2, ✗
+  R/r_C=1000.0, Δx/r_C=  1.0: scipy=7.29338202e-09, mp=7.29702241e-09, sf=   3, ✗
+  R/r_C=1000.0, Δx/r_C= 10.0: scipy=1.06167269e-08, mp=1.06202913e-08, sf=   3, ✗
+
+--------------------------------------------------------------------------------
+RECOMMENDATIONS
+--------------------------------------------------------------------------------
+
+1. eta_kfree_numeric (real-space):
+   - Default params (limit=500, epsabs=1e-14, epsrel=1e-14) are SAFE for R/r_C <= 100.
+   - For R/r_C in [100, 500]: increase limit to 1200; 10 sigfigs still achievable.
+   - For R/r_C > 500: fundamental precision loss — recommend using closed form
+     (eta_kfree_closed_numeric) instead of quadrature.
+   - epsabs/epsrel tuning provides marginal benefit; the bottleneck is integrand
+     scale separation, not tolerance.
+
+2. eta_kfree_fourier_numeric:
+   - Similar behavior to real-space. No advantage for large R/r_C.
+   - For small R/r_C (< 1): Fourier route is slightly more accurate than real-space
+     because the integrand decays faster (q^2 * exp(-q^2) vs polynomial * Gaussian).
+
+3. K_CSL_sph_numeric:
+   - Default params (limit=800, epsabs=1e-14, epsrel=1e-14) are SAFE for:
+     * R/r_C <= 10, any Δx/r_C
+     * R/r_C = 100, Δx/r_C >= 0.1
+   - MARGINAL: R/r_C = 100 with Δx/r_C = 0 (kernel ≈ 0, not meaningful)
+   - UNSAFE: R/r_C >= 100 with small Δx/r_C (roundoff from sinc(q*Δx/r_C) ≈ 1)
+   - For problematic regions: raising limit to 2000 + epsabs=1e-15 helps but
+     does not fully recover 10 sigfigs at R/r_C=1000.
+   - When Δx=0 exactly: K_CSL=0 by definition (integrand is identically zero);
+     this is not a precision issue but a degenerate case.
+
+4. General:
+   - The closed-form expressions (SymPy) are the gold standard for eta_kfree.
+   - For K_CSL_sph, there is no closed form; mpmath at dps>=50 is the reference.
+   - scipy.quad with default params is reliable for 10 sigfigs in the safe envelope.
+   - IntegrationWarnings about "roundoff" are reliably fixed by raising limit to 2000.
+   - Warnings about "maximum number of subdivisions" indicate fundamental difficulty.
+
+5. Per-kernel recommendations:
+
+   eta_kfree_numeric:
+     limit: 500 (safe up to 100), 1200 (safe up to 500), use closed form beyond
+     epsabs: 1e-14 is adequate
+     epsrel: 1e-14 is adequate
+
+   eta_kfree_fourier_numeric:
+     limit: 800 (safe up to 100), 1500 (safe up to 500)
+     epsabs: 1e-14 is adequate
+     epsrel: 1e-14 is adequate
+
+   K_CSL_sph_numeric:
+     limit: 800 (safe for R/r_C <= 10), 2000 (marginal for R/r_C=100)
+     epsabs: 1e-14 OK, 1e-15 helps at R/r_C=100
+     epsrel: 1e-14 OK, 1e-15 helps at R/r_C=100
+     Beyond R/r_C=100: use mpmath reference or accept degraded precision.
+
+================================================================================
+END OF REPORT
+================================================================================

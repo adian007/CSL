@@ -1,0 +1,382 @@
+\begin{thebibliography}{47}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname bibnamefont\endcsname\relax
+  \def\bibnamefont#1{#1}\fi
+\expandafter\ifx\csname bibfnamefont\endcsname\relax
+  \def\bibfnamefont#1{#1}\fi
+\expandafter\ifx\csname citenamefont\endcsname\relax
+  \def\citenamefont#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{\citenamefont{Schr{\"o}dinger}(1935)}]{Schrodinger}
+\bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Schr{\"o}dinger}},
+  \bibinfo{journal}{Naturwissenschaften} \textbf{\bibinfo{volume}{23}},
+  \bibinfo{pages}{807} (\bibinfo{year}{1935}).
+
+\bibitem[{\citenamefont{J{\"o}nsson}(1961)}]{Jonsson}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{J{\"o}nsson}},
+  \bibinfo{journal}{Zeitschrift f{\"u}r {P}hysik}
+  \textbf{\bibinfo{volume}{161}}, \bibinfo{pages}{454} (\bibinfo{year}{1961}).
+
+\bibitem[{\citenamefont{Eibenberger et~al.}(2013)\citenamefont{Eibenberger,
+  Gerlich, Arndt, Mayor, and T{\"u}xen}}]{C3CP51500A}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Eibenberger}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Gerlich}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Arndt}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Mayor}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{T{\"u}xen}},
+  \bibinfo{journal}{Physical Chemistry Chemical Physics}
+  \textbf{\bibinfo{volume}{15}}, \bibinfo{pages}{14696} (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Romero-Isart et~al.}(2011)\citenamefont{Romero-Isart,
+  Pflanzer, Blaser, Kaltenbaek, Kiesel, Aspelmeyer, and
+  Cirac}}]{PhysRevLett.107.020405}
+\bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Romero-Isart}},
+  \bibinfo{author}{\bibfnamefont{A.~C.} \bibnamefont{Pflanzer}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Blaser}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Kaltenbaek}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Kiesel}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Aspelmeyer}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{J.~I.} \bibnamefont{Cirac}},
+  \bibinfo{journal}{Physical review letters} \textbf{\bibinfo{volume}{107}},
+  \bibinfo{pages}{020405} (\bibinfo{year}{2011}).
+
+\bibitem[{\citenamefont{Bassi and Ghirardi}(2003)}]{collapse_review1}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bassi}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Ghirardi}},
+  \bibinfo{journal}{Physics Reports} \textbf{\bibinfo{volume}{379}},
+  \bibinfo{pages}{257} (\bibinfo{year}{2003}).
+
+\bibitem[{\citenamefont{Bassi et~al.}(2013)\citenamefont{Bassi, Lochan, Satin,
+  Singh, and Ulbricht}}]{collapse_review2}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bassi}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Lochan}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Satin}},
+  \bibinfo{author}{\bibfnamefont{T.~P.} \bibnamefont{Singh}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Ulbricht}},
+  \bibinfo{journal}{Reviews of Modern Physics} \textbf{\bibinfo{volume}{85}},
+  \bibinfo{pages}{471} (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Adler}(2004)}]{trace}
+\bibinfo{author}{\bibfnamefont{S.~L.} \bibnamefont{Adler}},
+  \emph{\bibinfo{title}{Quantum theory as an emergent phenomenon: The
+  statistical mechanics of matrix models as the precursor of quantum field
+  theory}} (\bibinfo{publisher}{Cambridge University Press},
+  \bibinfo{year}{2004}).
+
+\bibitem[{\citenamefont{Ghirardi et~al.}(1986)\citenamefont{Ghirardi, Rimini,
+  and Weber}}]{GRW}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Ghirardi}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Rimini}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Weber}},
+  \bibinfo{journal}{Physical Review D} \textbf{\bibinfo{volume}{34}},
+  \bibinfo{pages}{470} (\bibinfo{year}{1986}).
+
+\bibitem[{\citenamefont{Ghirardi et~al.}(1990)\citenamefont{Ghirardi, Pearle,
+  and Rimini}}]{CSL1}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Ghirardi}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Pearle}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Rimini}},
+  \bibinfo{journal}{Physical Review A} \textbf{\bibinfo{volume}{42}},
+  \bibinfo{pages}{78} (\bibinfo{year}{1990}).
+
+\bibitem[{\citenamefont{Ghirardi et~al.}(1995)\citenamefont{Ghirardi, Grassi,
+  and Benatti}}]{CSL2}
+\bibinfo{author}{\bibfnamefont{G.~C.} \bibnamefont{Ghirardi}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Grassi}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Benatti}},
+  \bibinfo{journal}{Foundations of Physics} \textbf{\bibinfo{volume}{25}},
+  \bibinfo{pages}{5} (\bibinfo{year}{1995}).
+
+\bibitem[{\citenamefont{Adler}(2007)}]{1751-8121-40-12-S03}
+\bibinfo{author}{\bibfnamefont{S.~L.} \bibnamefont{Adler}},
+  \bibinfo{journal}{Journal of Physics A: Mathematical and Theoretical}
+  \textbf{\bibinfo{volume}{40}}, \bibinfo{pages}{2935} (\bibinfo{year}{2007}).
+
+\bibitem[{\citenamefont{Bahrami
+  et~al.}(2014{\natexlab{a}})\citenamefont{Bahrami, Paternostro, Bassi, and
+  Ulbricht}}]{PhysRevLett.112.210404}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Bahrami}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Paternostro}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bassi}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Ulbricht}},
+  \bibinfo{journal}{Physical Review Letters} \textbf{\bibinfo{volume}{112}},
+  \bibinfo{pages}{210404} (\bibinfo{year}{2014}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Bahrami
+  et~al.}(2014{\natexlab{b}})\citenamefont{Bahrami, Bassi, and
+  Ulbricht}}]{PhysRevA.89.032127}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Bahrami}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bassi}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Ulbricht}},
+  \bibinfo{journal}{Physical Review A} \textbf{\bibinfo{volume}{89}},
+  \bibinfo{pages}{032127} (\bibinfo{year}{2014}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Nimmrichter et~al.}(2014)\citenamefont{Nimmrichter,
+  Hornberger, and Hammerer}}]{PhysRevLett.113.020405}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Nimmrichter}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Hornberger}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Hammerer}},
+  \bibinfo{journal}{Physical review letters} \textbf{\bibinfo{volume}{113}},
+  \bibinfo{pages}{020405} (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Di{\'o}si}(2015)}]{PhysRevLett.114.050403}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Di{\'o}si}},
+  \bibinfo{journal}{Physical review letters} \textbf{\bibinfo{volume}{114}},
+  \bibinfo{pages}{050403} (\bibinfo{year}{2015}).
+
+\bibitem[{\citenamefont{Vinante et~al.}(2016)\citenamefont{Vinante, Bahrami,
+  Bassi, Usenko, Wijts, and Oosterkamp}}]{2015arXiv151005791V}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Vinante}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Bahrami}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bassi}},
+  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Usenko}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Wijts}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Oosterkamp}},
+  \bibinfo{journal}{Physical review letters} \textbf{\bibinfo{volume}{116}},
+  \bibinfo{pages}{090402} (\bibinfo{year}{2016}).
+
+\bibitem[{\citenamefont{Curceanu et~al.}(2015)\citenamefont{Curceanu, Hiesmayr,
+  and Piscicchia}}]{Curceanu}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Curceanu}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Hiesmayr}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Piscicchia}},
+  \bibinfo{journal}{Journal of Advanced Physics} \textbf{\bibinfo{volume}{4}},
+  \bibinfo{pages}{263} (\bibinfo{year}{2015}).
+
+\bibitem[{\citenamefont{Smirne and Bassi}(2015)}]{Smirne:2014paa}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Smirne}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bassi}},
+  \bibinfo{journal}{Scientific reports} \textbf{\bibinfo{volume}{5}}
+  (\bibinfo{year}{2015}).
+
+\bibitem[{\citenamefont{Pearle}(1993)}]{PhysRevA.48.913}
+\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Pearle}},
+  \bibinfo{journal}{Physical Review A} \textbf{\bibinfo{volume}{48}},
+  \bibinfo{pages}{913} (\bibinfo{year}{1993}).
+
+\bibitem[{\citenamefont{Adler and Bassi}(2007)}]{1751-8121-40-50-012}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Adler}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bassi}},
+  \bibinfo{journal}{Journal of Physics A: Mathematical and Theoretical}
+  \textbf{\bibinfo{volume}{40}}, \bibinfo{pages}{15083} (\bibinfo{year}{2007}).
+
+\bibitem[{\citenamefont{Adler and Bassi}(2008)}]{1751-8121-41-39-395308}
+\bibinfo{author}{\bibfnamefont{S.~L.} \bibnamefont{Adler}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bassi}},
+  \bibinfo{journal}{Journal of Physics A: Mathematical and Theoretical}
+  \textbf{\bibinfo{volume}{41}}, \bibinfo{pages}{395308}
+  (\bibinfo{year}{2008}).
+
+\bibitem[{\citenamefont{Bassi et~al.}(2010)\citenamefont{Bassi, Deckert, and
+  Ferialdi}}]{0295-5075-92-5-50006}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bassi}},
+  \bibinfo{author}{\bibfnamefont{D.-A.} \bibnamefont{Deckert}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Ferialdi}},
+  \bibinfo{journal}{EPL (Europhysics Letters)} \textbf{\bibinfo{volume}{92}},
+  \bibinfo{pages}{50006} (\bibinfo{year}{2010}).
+
+\bibitem[{\citenamefont{Feldmann and Tumulka}(2012)}]{1751-8121-45-6-065304}
+\bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Feldmann}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Tumulka}},
+  \bibinfo{journal}{Journal of Physics A: Mathematical and Theoretical}
+  \textbf{\bibinfo{volume}{45}}, \bibinfo{pages}{065304}
+  (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Nimmrichter
+  et~al.}(2011{\natexlab{a}})\citenamefont{Nimmrichter, Hornberger, Haslinger,
+  and Arndt}}]{PhysRevA.83.043621}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Nimmrichter}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Hornberger}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Haslinger}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Arndt}},
+  \bibinfo{journal}{Physical Review A} \textbf{\bibinfo{volume}{83}},
+  \bibinfo{pages}{043621} (\bibinfo{year}{2011}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Toro{\v{s}} and Bassi}(2016)}]{matterwave}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Toro{\v{s}}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bassi}},
+  \bibinfo{journal}{arXiv preprint arXiv:1601.02931v2}  (\bibinfo{year}{2016}).
+
+\bibitem[{\citenamefont{Hornberger et~al.}(2009)\citenamefont{Hornberger,
+  Gerlich, Ulbricht, Hackerm{\"u}ller, Nimmrichter, Goldt, Boltalina, and
+  Arndt}}]{hornberger2009theory}
+\bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Hornberger}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Gerlich}},
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Ulbricht}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Hackerm{\"u}ller}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Nimmrichter}},
+  \bibinfo{author}{\bibfnamefont{I.~V.} \bibnamefont{Goldt}},
+  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Boltalina}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Arndt}},
+  \bibinfo{journal}{New Journal of Physics} \textbf{\bibinfo{volume}{11}},
+  \bibinfo{pages}{043032} (\bibinfo{year}{2009}).
+
+\bibitem[{\citenamefont{Savage and Walls}(1985)}]{savage1985damping}
+\bibinfo{author}{\bibfnamefont{C.~M.} \bibnamefont{Savage}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Walls}},
+  \bibinfo{journal}{Physical Review A} \textbf{\bibinfo{volume}{32}},
+  \bibinfo{pages}{2316} (\bibinfo{year}{1985}).
+
+\bibitem[{\citenamefont{Smirne and Vacchini}(2010)}]{smirne2010quantum}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Smirne}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Vacchini}},
+  \bibinfo{journal}{Physical Review A} \textbf{\bibinfo{volume}{82}},
+  \bibinfo{pages}{042111} (\bibinfo{year}{2010}).
+
+\bibitem[{\citenamefont{Smirne et~al.}(2014)\citenamefont{Smirne, Vacchini, and
+  Bassi}}]{smirne2014dissipative}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Smirne}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Vacchini}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bassi}},
+  \bibinfo{journal}{Physical Review A} \textbf{\bibinfo{volume}{90}},
+  \bibinfo{pages}{062135} (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Hornberger et~al.}(2004)\citenamefont{Hornberger, Sipe,
+  and Arndt}}]{PhysRevA.70.053608}
+\bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Hornberger}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Sipe}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Arndt}},
+  \bibinfo{journal}{Physical Review A} \textbf{\bibinfo{volume}{70}},
+  \bibinfo{pages}{053608} (\bibinfo{year}{2004}).
+
+\bibitem[{\citenamefont{Brezger et~al.}(2003)\citenamefont{Brezger, Arndt, and
+  Zeilinger}}]{1464-4266-5-2-362}
+\bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Brezger}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Arndt}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Zeilinger}},
+  \bibinfo{journal}{Journal of Optics B: Quantum and Semiclassical Optics}
+  \textbf{\bibinfo{volume}{5}}, \bibinfo{pages}{S82} (\bibinfo{year}{2003}).
+
+\bibitem[{\citenamefont{Juffmann et~al.}(2012)\citenamefont{Juffmann, Milic,
+  M\"{u}llneritscha, Asenbaum, Tsukernik, T\"{u}xen, Mayor, Cheshnovsky, and
+  Arndt}}]{Real}
+\bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Juffmann}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Milic}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{M\"{u}llneritscha}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Asenbaum}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Tsukernik}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{T\"{u}xen}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Mayor}},
+  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Cheshnovsky}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Arndt}},
+  \bibinfo{journal}{Nature Nanotechnology} \textbf{\bibinfo{volume}{7}},
+  \bibinfo{pages}{297 } (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Sclafani}(2013)}]{MSCH}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Sclafani}}, Ph.D. thesis,
+  \bibinfo{school}{Universit\"{a}t Wien} (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Carlesso et~al.}(2016)\citenamefont{Carlesso, Bassi,
+  Falferi, and Vinante}}]{carlesso2016experimental}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Carlesso}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bassi}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Falferi}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Vinante}},
+  \bibinfo{journal}{Physical Review D} \textbf{\bibinfo{volume}{94}},
+  \bibinfo{pages}{124036} (\bibinfo{year}{2016}).
+
+\bibitem[{\citenamefont{Vacchini and Hornberger}(2009)}]{Vacchini200971}
+\bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Vacchini}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Hornberger}},
+  \bibinfo{journal}{Physics Reports} \textbf{\bibinfo{volume}{478}},
+  \bibinfo{pages}{71} (\bibinfo{year}{2009}).
+
+\bibitem[{\citenamefont{Donadi et~al.}(2014)\citenamefont{Donadi, Deckert, and
+  Bassi}}]{Donadi201470}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Donadi}},
+  \bibinfo{author}{\bibfnamefont{D.-A.} \bibnamefont{Deckert}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bassi}},
+  \bibinfo{journal}{Annals of Physics} \textbf{\bibinfo{volume}{340}},
+  \bibinfo{pages}{70} (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Bilardello et~al.}(2016)\citenamefont{Bilardello,
+  Donadi, Vinante, and Bassi}}]{bilardello2016bounds}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Bilardello}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Donadi}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Vinante}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bassi}},
+  \bibinfo{journal}{Physica A: {S}tatistical {M}echanics and its
+  {A}pplications} \textbf{\bibinfo{volume}{462}}, \bibinfo{pages}{764}
+  (\bibinfo{year}{2016}).
+
+\bibitem[{\citenamefont{Di{\'o}si and Ferialdi}(2014)}]{diosi2014general}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Di{\'o}si}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Ferialdi}},
+  \bibinfo{journal}{Physical review letters} \textbf{\bibinfo{volume}{113}},
+  \bibinfo{pages}{200403} (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Gasbarri et~al.}(2017)\citenamefont{Gasbarri,
+  Toro{\v{s}}, and Bassi}}]{gasbarri2017general}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Gasbarri}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Toro{\v{s}}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bassi}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{119}},
+  \bibinfo{pages}{100403} (\bibinfo{year}{2017}),
+  \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.119.100403}.
+
+\bibitem[{\citenamefont{Nimmrichter and
+  Hornberger}(2013)}]{nimmrichter2013macroscopicity}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Nimmrichter}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Hornberger}},
+  \bibinfo{journal}{Physical review letters} \textbf{\bibinfo{volume}{110}},
+  \bibinfo{pages}{160403} (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Nimmrichter}(2014)}]{nimmrichter2014macroscopic}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Nimmrichter}},
+  \emph{\bibinfo{title}{Macroscopic matter wave interferometry}}
+  (\bibinfo{publisher}{Springer}, \bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Nimmrichter
+  et~al.}(2011{\natexlab{b}})\citenamefont{Nimmrichter, Hornberger, Haslinger,
+  and Arndt}}]{nimmrichter2011testing}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Nimmrichter}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Hornberger}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Haslinger}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Arndt}},
+  \bibinfo{journal}{Physical Review A} \textbf{\bibinfo{volume}{83}},
+  \bibinfo{pages}{043621} (\bibinfo{year}{2011}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Kaltenbaek et~al.}(2016)\citenamefont{Kaltenbaek,
+  Aspelmeyer, Barker, Bassi, Bateman, Bongs, Bose, Braxmaier, Brukner,
+  Christophe et~al.}}]{kaltenbaek2016macroscopic}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Kaltenbaek}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Aspelmeyer}},
+  \bibinfo{author}{\bibfnamefont{P.~F.} \bibnamefont{Barker}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bassi}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Bateman}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Bongs}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Bose}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Braxmaier}},
+  \bibinfo{author}{\bibfnamefont{{\v{C}}.}~\bibnamefont{Brukner}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Christophe}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{EPJ Quantum Technology}
+  \textbf{\bibinfo{volume}{3}}, \bibinfo{pages}{5} (\bibinfo{year}{2016}).
+
+\bibitem[{\citenamefont{Holevo}(1993{\natexlab{a}})}]{holevo1993note}
+\bibinfo{author}{\bibfnamefont{A.~S.} \bibnamefont{Holevo}},
+  \bibinfo{journal}{Reports on mathematical physics}
+  \textbf{\bibinfo{volume}{32}}, \bibinfo{pages}{211}
+  (\bibinfo{year}{1993}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Holevo}(1993{\natexlab{b}})}]{holevo1993conservativity}
+\bibinfo{author}{\bibfnamefont{A.~S.} \bibnamefont{Holevo}},
+  \bibinfo{journal}{Reports on Mathematical Physics}
+  \textbf{\bibinfo{volume}{33}}, \bibinfo{pages}{95}
+  (\bibinfo{year}{1993}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Holevo}(1995)}]{holevo1995translation}
+\bibinfo{author}{\bibfnamefont{A.~S.} \bibnamefont{Holevo}},
+  \bibinfo{journal}{Izvestiya: Mathematics} \textbf{\bibinfo{volume}{59}},
+  \bibinfo{pages}{427} (\bibinfo{year}{1995}).
+
+\bibitem[{\citenamefont{Holevo}(1996)}]{holevo1996covariant}
+\bibinfo{author}{\bibfnamefont{A.~S.} \bibnamefont{Holevo}},
+  \bibinfo{journal}{Journal of Mathematical Physics}
+  \textbf{\bibinfo{volume}{37}}, \bibinfo{pages}{1812} (\bibinfo{year}{1996}).
+
+\end{thebibliography}

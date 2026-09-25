@@ -1,0 +1,21 @@
+{
+   "sources" : [
+      {
+         "usage" : "toplevel",
+         "filename" : "Davila_Milburn_2026a_PRD.tex"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "Davila_Milburn_2026a_PRD.bib"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "Davila_Milburn_2026a_PRDNotes.bib"
+      }
+   ],
+   "spec_version" : 1,
+   "texlive_version" : "2025",
+   "process" : {
+      "compiler" : "pdflatex"
+   }
+}
